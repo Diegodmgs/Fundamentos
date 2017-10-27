@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+int posi_num(int n);
+int menor_num(int n);
+
+
+void main()
+{
+	int n,p,r;
+	cout<<"ingrese un numero:";
+	cin>>n;
+	p=posi_num(n);
+	r=menor_num(n);
+	cout<<"El menor digito es:_"<<r<<"_en la posicion numero_"<<p<<"_de derecha a izquierda";
+	getch();
+}
+
+int posi_num(int n)
+{int m,r=9,p,i=0,j;
+	while(n>0){
+		m=n%10;
+		n=n/10;
+		i=i+1;
+		if (m<=r)
+		{r=m;
+		j=i;}}
+	return j;}
+int menor_num(int n)
+{int m,r=9,p,i=0,j;
+	while(n>0){
+		m=n%10;
+		n=n/10;
+		i=i+1;
+		if (m<=r)
+		{r=m;
+		j=i;}}
+	return r;}
