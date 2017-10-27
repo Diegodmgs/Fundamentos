@@ -7,8 +7,8 @@ float suma_serie(float x, int n);
 
 
 void main()
-{int x,n;
-float s;
+{int n;
+float x,s;
 	cout<<"ingrese un numero x:";
 	cin>>x;
 	cout<<"ingrese un limite n:";
