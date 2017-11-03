@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+float Precio_Ferrocarril(int dias, float km);
+
+
+void main()
+{
+	int dias;
+	float km,precio;
+	cout<<"ingrese los dias de estancia:";
+	cin>>dias;
+	cout<<"ingrese los Km recorridos en total:";
+	cin>>km;
+	precio=Precio_Ferrocarril(dias,km);
+	cout<<"El precio es igual a:_"<<precio<<"_Bs";
+	getch();
+}
+ 
+float Precio_Ferrocarril(int dias, float km)
+{float precio;
+precio=km*0.75;
+if((km>800)&&(dias>7))
+	precio=precio*0.70;
+return precio;}
